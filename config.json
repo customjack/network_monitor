@@ -1,0 +1,24 @@
+{
+  "interval_seconds": 30,
+  "ping_timeout": 3,
+  "targets": [
+    {
+      "name": "internet-google",
+      "interface": "eth0",
+      "host": "8.8.8.8"
+    },
+    {
+      "name": "internet-cloudflare",
+      "interface": "eth0",
+      "host": "1.1.1.1"
+    }
+  ],
+  "db_path": "data/monitor.db",
+  "log_path": "logs/monitor.log",
+  "enable_speedtest": true,
+  "speedtest_interval_seconds": 1800,
+  "speedtest_timeout_seconds": 90,
+  "speedtest_server_id": "20158",
+  "gui_refresh_seconds": 5,
+  "gui_window_minutes": 60
+}
