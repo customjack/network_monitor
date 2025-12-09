@@ -56,6 +56,7 @@ Stop with `Ctrl+C`. Logs and the database are created automatically.
   npm run dev        # runs Next.js dev server
   npm run build-docs # builds static site to docs/ for GitHub Pages
   ```
+- GitHub Pages URL: https://customjack.github.io/network_monitor/
 
 ## WSL notes
 - The default `config.json` now targets `eth0` with two public resolvers (`8.8.8.8` and `1.1.1.1`). Adjust the interface name if your distro uses something different.
