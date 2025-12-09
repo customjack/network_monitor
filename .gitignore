@@ -1,4 +1,14 @@
 __pycache__/
+.pytest_cache/
+.venv/
+.mypy_cache/
+.DS_Store
 *.pyc
-#data/
-#logs/
+*.pyo
+
+node_modules/
+src/web/node_modules/
+#docs/
+.next/
+.env
+.env.local

@@ -48,6 +48,15 @@ python main.py --gui-window 120   # show last 120 minutes in plots
 
 Stop with `Ctrl+C`. Logs and the database are created automatically.
 
+## Web dashboard (static export to `docs/`)
+- Requires Node 18+ available inside WSL (Windows npm on UNC paths will fail; use `nvm install --lts` inside Ubuntu).
+- From repo root:
+  ```bash
+  npm install        # installs frontend deps in src/web via postinstall
+  npm run dev        # runs Next.js dev server
+  npm run build-docs # builds static site to docs/ for GitHub Pages
+  ```
+
 ## WSL notes
 - The default `config.json` now targets `eth0` with two public resolvers (`8.8.8.8` and `1.1.1.1`). Adjust the interface name if your distro uses something different.
 - The bundled `speedtester` will auto-find a speedtest CLI even if it's installed to `~/.local/bin` (e.g., via `python3 -m pip install --user speedtest-cli`).

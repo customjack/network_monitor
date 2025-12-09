@@ -1,0 +1,13 @@
+{
+  "name": "network-monitor-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix src/web run dev",
+    "build-docs": "npm --prefix src/web run build",
+    "lint": "npm --prefix src/web run lint",
+    "postinstall": "npm --prefix src/web install"
+  },
+  "dependencies": {
+    "netmon": "^0.0.3"
+  }
+}
